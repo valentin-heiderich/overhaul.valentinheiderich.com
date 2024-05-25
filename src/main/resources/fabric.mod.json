@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "valentins-overhaul",
+	"version": "${version}",
+	"name": "Valentins Overhaul",
+	"description": "This is my first mod, idk what I will do yet .-.!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/valentins-overhaul/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"overhaul.valentinheiderich.com.ValentinsOverhaul"
+		],
+		"client": [
+			"overhaul.valentinheiderich.com.ValentinsOverhaulClient"
+		],
+		"fabric-datagen": [
+			"overhaul.valentinheiderich.com.ValentinsOverhaulDataGenerator"
+		]
+	},
+	"mixins": [
+		"valentins-overhaul.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
